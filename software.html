@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Software | Owen Byrne</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">        
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'>
+    <link href='css/customstyles.css' rel='stylesheet'>
+  </head>
+
+  <body>
+    <div class='container'>
+      <div class='row'>
+
+        <div class='col-md-12'>
+          <div class='customDiv'>
+            <h2>Software</h2>
+          </div>
+        </div>
+
+        <div class='big-screen-menu'>
+          <div class='col-md-12'>
+            <div class='customDiv'>
+              <a href='index.html'><button>home</button></a>
+              <a href='software.html'><button>software</button></a>
+              <a href='music.html'><button>music</button></a>
+              <a href='about.html'><button>about</button></a>
+              <a href='contact.html'><button>contact</button></a>
+              <a href='gallery.html'><button>gallery</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-md-12'>
+          <div class='customDiv'>
+            <div id='white-box-1'>
+              <h5>DrumLoop Sequencer</h5>
+              <div class='embed-container'>
+                <iframe src="https://player.vimeo.com/video/127145724" frameborder="0" title="drumloop PD recording" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+
+              <p>
+                This is a PureData patch which uses a drum loop, cut into 16 pieces/steps.
+                The tabel (top left) represents these steps. There is a function that changes
+                one step randomly each time the pattern is looped. It also has some effects,
+                most of which speak for themselves. The fiddle~ object is used to extract
+                the pitch from the drum samples, which is used for the bass tones.
+                "osc audio1/audio2" are FM synthesis effects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-md-12'>
+          <div class='customDiv'>
+            <div id='white-box-2'>
+              <h5>AlgoComp</h5>
+              <div class='embed-container'>
+                <iframe src="https://player.vimeo.com/video/127145723" frameborder="0" title="AlgoComp recording" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+
+              <p>This project uses OpenFrameworks and PureData. The musical data is generated
+              in OpenFrameworks and sent to PureData via OSC.
+              The audio is synthesised in PureData.
+              The user has the option of adding (and removing) objects into the world.
+              There are three different types of objects: UserObjects, BeatObjects and RandomObjects. 
+              <br><br>
+              The first UserObject, when added, will create a random melody, in a randomly selected scale.
+              The other UserObjects, when added, will create a counterpoint melody on top of the first melody,
+              fitting the musical scale of the current measure. 
+              <br><br>
+              The BeatObjects provide a semi-randomly-created beat. 
+              <br><br>
+              The RandomObjects, the small yellow ones, will randomly float from point to point. 
+              <br><br>
+              When they collide with one of the UserObjects, a vibrato effect one the tone of that object
+              will be triggered. The next note in that objects melody will also be randomised,
+              so theres a good chance that note will no longer fit the current scale and harmony.
+              This adds some dissonance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class='small-screen-menu'>
+          <div class='col-md-12'>
+            <div class='customDiv'>
+              <a href='index.html'><button>home</button></a>
+              <a href='software.html'><button>software</button></a>
+              <a href='music.html'><button>music</button></a>
+              <a href='about.html'><br><button>about</button></a>
+              <a href='contact.html'><button>contact</button></a>
+              <a href='gallery.html'><button>gallery</button></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
